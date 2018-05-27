@@ -1,0 +1,39 @@
+<html>
+<head>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            var number = 0;
+            var inputVal = 0;
+            var radioVal = 0;
+            $('#calculate').click(function () {
+                number = 0;
+                inputVal = $('.number').val() ? parseInt($('.number').val()) : 0;
+                radioVal = $('.radio:checked').val() ? parseInt($('.radio:checked').val()) : 1;
+                number = inputVal * radioVal;
+                $('#priceVal').text(number);
+            });
+        });
+    </script>
+</head>
+<body>
+<label for="number">Number</label>
+<input type="number" class="number" id="number" value="0">
+<br/>
+<label for="premium">Premium</label>
+<input type="radio" value="1000" class="radio" id="premium" name="radio">
+<br/>
+<label for="diesel">Diesel</label>
+<input type="radio" value="3000" class="radio" id="diesel" name="radio">
+<br/>
+<label for="super">Super</label>
+<input type="radio" value="4000" class="radio" id="super" name="radio">
+<br/>
+<button type="button" id="calculate">Calculate</button>
+<br/>
+<span><b>Price-</b><span id="priceVal"></span></span>
+</body>
+</html>
