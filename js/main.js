@@ -2071,6 +2071,8 @@ $(document).ready(function () {
     });
 
     $('body').on('touchstart click', function (e) {
+        $( "#" + $(e.target).attr('id') + "Link" ).trigger( "click" );
+
         if ($(window).width() < 992) {
             if (!$('.navbar-collapse').has(e.target).is('.navbar-collapse') && $('.navbar-collapse').hasClass('in') && !$(e.target).hasClass('navbar-toggle')) {
                 $('.navbar-collapse').collapse('hide');
