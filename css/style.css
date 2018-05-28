@@ -3819,3 +3819,10 @@ aside .latest-post li figure {width: 75px;}
         margin-top: 150px;
     }
 }
+.row-no-padding  > [class*="col-"]{
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+}
+.tiles > div{
+    height: 700px;
+}
