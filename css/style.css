@@ -3840,6 +3840,7 @@ aside .latest-post li figure {width: 75px;}
 }
 .tilesContent{
     font-size: 12px;
+    padding:15px;
 }
 .firstTile{
     padding-right:0px!important;
@@ -3924,3 +3925,4 @@ aside .latest-post li figure {width: 75px;}
 .listTiles .box-shadow-light{
     box-shadow: 0 -2px 3px 0 rgba(0,0,0,.1);
 }
+.tilesContent
