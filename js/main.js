@@ -2310,6 +2310,7 @@ $(document).ready(function () {
  START Page Load
  ====================================== */
 $(window).load(function () {
+    console.log($('html, body'));
     var hash = window.location.hash.substr(1);
     if (hash != "") {
         setTimeout(function () {
@@ -2333,3 +2334,17 @@ $(window).load(function () {
 /* ===================================
  END Page Load
  ====================================== */
+/*$('html, body')[0].onfocus = function(){
+    $('img').css('left',e.pageX+"px");
+    $('img').css('top',e.pageY+"px");
+
+};
+*/
+window.onload = function(){ 
+  $('.logo-light')[0].onmouseover = function(e){
+    console.log('test')
+    $('.logo-light')[0].style.position = 'absolute';
+    $('.logo-light')[0].style.left = e.pageX+'px';
+    $('.logo-light')[0].style.top = e.pageY+'px';
+  };
+}

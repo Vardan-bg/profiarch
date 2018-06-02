@@ -91,8 +91,7 @@
                      <h1 class="alt-font text-white font-weight-500 width-55 sm-width-80 xs-width-100 center-col no-margin-bottom">Ищешь свой идеальный дом?</h1>
                      <!-- end page title -->
                      <div class="col-md-6 col-sm-6 col-xs-10 center-col md-margin-top sm-margin-ten-top xs-margin-seven-top">
-                        <input type="text" id="ploshad" value="" class="col-md-10 col-sm-10 col-xs-10" placeholder="укажите площадь помещения">
-                        <div class="col-md-2 col-sm-2 col-xs-2 text-center"><a href="#section-down" class="inner-link"><i class="ti-arrow-right icon-extra-small text-white bg-deep-pink padding-15px-all xs-padding-10px-all border-radius-100"></i></a></div>
+                        <div class="down-section text-center"><a href="#section-down" class="inner-link"><i class="ti-arrow-down icon-extra-small text-white bg-deep-pink padding-15px-all xs-padding-10px-all border-radius-100"></i></a></div>
                         <!-- <button onClick="raschitat();" class="btn btn-small btn-deep-pink margin-30px-top sm-margin-10px-top xs-margin-three-top">Рассчитать</button> -->
                      </div>
                   </div>
@@ -117,180 +116,132 @@
       <!-- start contact form section -->
       <!-- end contact form section -->
       <section id="section-down" class="no-padding bg-light-gray wow fadeIn">
-         <div class="container">
-            <span class="text-extra-dark-gray alt-font text-large font-weight-500 margin-25px-bottom display-block">Калькулятор стоимости проекта</span>
-
+        <div class="container-custom">
+          <div class = "container">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <span class=" headTextHeight text-extra-dark-gray alt-font text-large font-weight-500 display-block">Калькулятор стоимости проекта</span
+              >
+            </div>
+            <input type="text" id="ploshad" value="" class="col-md-8 col-sm-8 col-xs-12" placeholder="укажите площадь помещения">
+          </div>
+        </div>
+        <div class="container-custom">
+          <div class = "container">
+            <div data-toggle="buttons" class="dlk-radio btn-group col-md-6 col-sm-6 col-xs-12 buttonsCheck">
+              <label class="btn btn-primary conditionLabels">
+                <span class="fa fa-check glyphicon glyphicon-ok"></span>
+                <input type="checkbox" checked>Авторский Надзор
+              </label>
+            </div>
+            <div data-toggle="buttons" class="dlk-radio btn-group col-md-6 col-sm-6 col-xs-12 buttonsCheck">
+              <label class="btn btn-primary conditionLabels">
+                <span class="fa fa-check glyphicon glyphicon-ok"></span>
+                <input type="checkbox" checked>Коммерческое помещение
+              </label>
+            </div>
+          </div>
+        </div>
+          <div class="container">
+          <div role="alert" class="alert alertCustom alert-dismissable bg-transparent alert-warning alert-massage-style-2"><a href="#" class="close" data-dismiss="alert" aria-label="close">×</a><strong>Выбрав авторский надзор!!!</strong> +50% к стоимости проекта , для надзора строительных работ и сдачи обьекта под ключ!!!</div>
 
             <!-- Start Tiles -->
                <div class="row-no-padding tiles">
-                  <div class="col-md-6 col-sm-6 col-xs-12 sm-margin-30px-bottom wow fadeInUp last-paragraph-no-margin">
-                     <div class="bg-white box-shadow-light text-center padding-six-tb feature-box-8 position-relative z-index-5 height-100 xs-padding-15px-lr">
+              <ul class="row nav nav-tabs listTiles">
+                <li class="col-md-3 col-sm-3 col-xs-12 listNoPadding active">
+                  <a href="#tab_default_1" data-toggle="tab">
+                  <div class="firstTile sm-margin-30px-bottom wow fadeInUp last-paragraph-no-margin">
+                    <div class="bg-white box-shadow-light text-center padding-five-tb position-relative z-index-5 xs-padding-15px-lr">
                         <div class="display-inline-block margin-20px-bottom xs-margin-10px-bottom"><i class="icon-desktop text-white icon-round-small bg-deep-pink"></i></div>
-                        <div class="alt-font text-extra-dark-gray font-weight-500 margin-10px-bottom">
-                           Сугубо Инженерный</br></br>
-                           До 50квм - 350р/квм</br>
-                           50-150квм - 300р/квм</br>
-                           150-400квм - 250р/квм</br>
-                           400+квм - 200р/квм</br>
-                           <div class="medium-input-light text-left text-extra-small">
-                              <br />2D 
-                              <br />1. 
-                              <br />Обмер 2. 
-                              <br />Планировочные решения (до полного соглаования) 
-                              <br />3. План помещения с мебелью 
-                              <br />4. Экспликация 
-                              <br />5. План демонтажа/монтажа 
-                              <br />6. План полов 
-                              <br />7. План потолка 
-                              <br />8. План розеток 
-                              <br />9. План освитительных приборов с привязками к выключателям 10, Сантехника 11. План с размерами дверных проемов
-                              <br />
-                              <br />
-                           </div>
+                        <div class="alt-font text-extra-dark-gray font-weight-500 margin-10px-bottom">Сугубо Инженерный</br></br>
+                          <div class="tilesContent">
+                            До 50квм - 350р/квм</br>
+                            50-150квм - 300р/квм</br>
+                            150-400квм - 250р/квм</br>
+                            400+квм - 200р/квм</br>
+                          </div>
                         </div>
                         <div class="feature-box-overlay bg-deep-pink"></div>
-                     </div>
-                  </div>
-                  <!-- end Services item -->
-                  <!-- start Services item -->
-                  <div class="col-md-6 col-sm-6 col-xs-12 sm-margin-30px-bottom wow fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
-                     <div class="bg-white box-shadow-light text-center padding-six-tb feature-box-8 position-relative z-index-5 height-100 xs-padding-15px-lr">
+                    </div>
+                </div>
+              </a>
+              </li>
+              <li class="col-md-3 col-sm-3 col-xs-12 listNoPadding">
+                <a href="#tab_default_2" data-toggle="tab">
+                <!-- end Services item -->
+                <!-- start Services item -->
+                <div class=" sm-margin-30px-bottom wow fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
+                    <div class="bg-white box-shadow-light text-center padding-five-tb position-relative z-index-5 xs-padding-15px-lr">
                         <div class="display-inline-block margin-20px-bottom xs-margin-10px-bottom"><i class="icon-tools text-white icon-round-small bg-deep-pink"></i></div>
-                        <div class="alt-font text-extra-dark-gray font-weight-500 margin-10px-bottom">
-                           "Микро" Дизайн Проект</br></br>
-                           До 50квм - 800р/квм</br>
-                           50-150квм - 700р/квм</br>
-                           150-400квм - 600р/квм</br>
-                           400+квм - 500р/квм</br>
-                           <div class="medium-input-light text-left text-extra-small">
-                              <br />3D 
-                              <br />1. 3D Визуализация планировочных решений (без мебели с однотонной отделкой)
-                              МИКРО
-                              <br />2D 1. 
-                              <br />Обмер 2. Планировочные решения (до полного соглаования) 
-                              <br />3. План помещения с мебелью 
-                              <br />4. Экспликация 
-                              <br />5. План демонтажа/монтажа 
-                              <br />6. План полов 
-                              <br />7. План потолка 
-                              <br />8. План розеток 
-                              <br />9. Сантехника 
-                              <br />10. Развертка стен (Ведомость отделки) 
-                              <br />
-                              <br />3D
-                              <br />1. Дизайан интерьера (без мебели) 
-                              <br />2. 3D Визуализация всех помещений (отделка, пол, потолок) 
-                              <br />3. 3D Визуализация планировочных решений (без мебели)
-                           </div>
+                        <div class="alt-font text-extra-dark-gray font-weight-500 margin-10px-bottom">"Микро" Дизайн Проект</br></br>
+                          <div class="tilesContent">
+                            До 50квм - 800р/квм</br>
+                            50-150квм - 700р/квм</br>
+                            150-400квм - 600р/квм</br>
+                            400+квм - 500р/квм</br>
+                          </div>
                         </div>
                         <div class="feature-box-overlay bg-deep-pink"></div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row-no-padding tiles">
-                  <!-- end Services item -->
-                  <!-- start Services item -->
-                  <div class="col-md-6 col-sm-6 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-padding-15px-lr" data-wow-delay="0.4s">
-                     <div class="bg-white box-shadow-light text-center padding-six-tb feature-box-8 position-relative z-index-5 height-100">
+                    </div>
+                </div>
+                </a>
+                </li>
+                <li class="col-md-3 col-sm-3 col-xs-12 listNoPadding">
+                <a href="#tab_default_3" data-toggle="tab">
+                <!-- end Services item -->
+                <!-- start Services item -->
+                <div class=" xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-padding-15px-lr" data-wow-delay="0.4s">
+                    <div class="bg-white box-shadow-light text-center padding-five-tb position-relative z-index-5 height-100">
                         <div class="display-inline-block margin-20px-bottom xs-margin-10px-bottom"><i class="icon-scissors text-white icon-round-small bg-deep-pink"></i></div>
-                        <div class="alt-font text-extra-dark-gray font-weight-500 margin-10px-bottom">
-                           "Стандарт" Дизайн Проект</br></br>
-                           До 50квм - 1300р/квм</br>
-                           50-150квм - 1150р/квм</br>
-                           150-400квм - 1000р/квм</br>
-                           400+квм - 850р/квм</br>
-                        </div>
-                        <div class="medium-input-light text-left text-extra-small">
-                           <br />СТАНДАРТ
-                           <br />2D 
-                           <br />1. Обмер 
-                           <br />2. Планировочные решения (до полного соглаования) 
-                           <br />3. План помещения с мебелью 
-                           <br />4. Экспликация 
-                           <br />5. План демонтажа/монтажа 
-                           <br />6. План полов 
-                           <br />7. План потолка 
-                           <br />8. План розеток 
-                           <br />9. Сантехника 
-                           <br />10. Развертка стен (Ведомость отделки) 
-                           <br />11. Инжинерные чертежи всех декоративных и ГКЛ конструкций 
-                           <br />12. Чертежи всей спроектированной мебели (для далнейшего изготовления) 
-                           <br />
-                           <br />3D 
-                           <br />1. Full Design. Дизайан интерьера со спроектированной мебелью,  электрикой и предметами декора 
-                           <br />2. 3D Визуализация всех помещений (1-3 ракурс) 
-                        </div>
-                        <div>
+                        <div class="alt-font text-extra-dark-gray font-weight-500 margin-10px-bottom">"Стандарт" Дизайн Проект</br></br>
+                          <div class="tilesContent">
+                            До 50квм - 1300р/квм</br>
+                            50-150квм - 1150р/квм</br>
+                            150-400квм - 1000р/квм</br>
+                            400+квм - 850р/квм</br>
+                          </div>
                         </div>
                         <div class="feature-box-overlay bg-deep-pink"></div>
-                     </div>
-                  </div>
-                  <!-- end Services item -->
-                  <!-- start Services item -->
-                  <div class="col-md-6 col-sm-6 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-padding-15px-lr" data-wow-delay="0.6s">
-                     <div class="bg-white box-shadow-light text-center padding-six-tb feature-box-8 position-relative z-index-5 height-100">
+                    </div>
+                </div>
+                </a>
+                </li>
+                <!-- end Services item -->
+                <!-- start Services item -->
+                <li class="col-md-3 col-sm-3 col-xs-12 listNoPadding">
+                <a href="#tab_default_4" data-toggle="tab">
+                <div class=" wow fadeInUp last-paragraph-no-margin xs-padding-15px-lr" data-wow-delay="0.6s">
+                    <div class="bg-white box-shadow-light text-center padding-five-tb position-relative z-index-5 height-100">
                         <div class="display-inline-block margin-20px-bottom xs-margin-10px-bottom"><i class="icon-laptop text-white icon-round-small bg-deep-pink"></i></div>
-                        <div class="alt-font text-extra-dark-gray font-weight-500 margin-10px-bottom">
-                           "Макро" Дизайн Проект</br></br>
-                           До 50квм - 1500р/квм</br>
-                           50-150квм - 1350р/квм</br>
-                           150-400квм - 1200р/квм</br>
-                           400+квм - 1000р/квм</br>
+                        <div class="alt-font text-extra-dark-gray font-weight-500 margin-10px-bottom">"Макро" Дизайн Проект</br></br>
+                          <div class="tilesContent">
+                            До 50квм - 1500р/квм</br>
+                            50-150квм - 1350р/квм</br>
+                            150-400квм - 1200р/квм</br>
+                            400+квм - 1000р/квм</br>
+                          </div>
                         </div>
-                       <div class="medium-input-light text-left text-extra-small">
-                          <br />
-                          МАКРО
-                          <br />
-                          2D
-                          <br />
-                          1. Обмер 
-                          <br />
-                          2. Планировочные решения (до полного соглаования) 
-                          <br />
-                          3. План помещения с мебелью 
-                          <br />
-                          4. Экспликация 
-                          <br />
-                          5. План демонтажа/монтажа 
-                          <br />
-                          6. План освитительных приборов с привязками к выключателям 
-                          <br />
-                          7. План розеток 
-                          <br />
-                          8. План потолка 
-                          <br />
-                          9. План полов с указанием типа напольных покрытий 
-                          <br />
-                          10. План с размерами дверных проемов 
-                          <br />
-                          11. Сантехника 
-                          <br />
-                          12. Развертка стен (Ведомость отделки) 
-                          <br />
-                          13. Инжинерные чертежи всех декоративных и ГКЛ конструкций 
-                          <br />
-                          14. Чертежи всей спроектированной мебели (для далнейшего изготовления) 
-                          <br />
-                          15. Смета 
-                          <br />
-                          <br />
-                          3D
-                          <br />
-                          1. Full Design. Дизайан Интерьера со спроектированной мебелью,  электрикой и предметами декора 
-                          <br />
-                          2. 3D Визуализация всех помещений (2-4 ракурс) 
-                          <br />
-                          3. 3D Визуализация планировочных решений с мебелью и декором 
-                          <br />
-                          4. Дизайн и 3D Визуализация Экстерьера (если таковой имеется) 
-                          <dr />
-                          5. Панорамная экскурсия 360 градусов
-                       </div>
                         <div class="feature-box-overlay bg-deep-pink"></div>
-                     </div>
-                  </div>
+                    </div>
+                </div>
+              </a>
+              </li>
+            </ul>
                </div>
             <!-- End Tiles -->
+            <div class="tab-content tilesContent">
+              <div class="tab-pane active" id="tab_default_1">
+                test1
+              </div>
+              <div class="tab-pane" id="tab_default_2">
+                test2
+              </div>
+              <div class="tab-pane" id="tab_default_3">
+                test3
+              </div>
+              <div class="tab-pane" id="tab_default_4">
+                test4
+              </div>
+            </div>
             
 
             <form id="contact-form" action="javascript:void(0)" method="post">
@@ -303,10 +254,6 @@
                   <option value="makro">"Макро" Дизайн Проект</option>
                   
                   </select> -->
-               <input type="checkbox" name="LetterNeed" id="LetterNeed" value="barev" onchange="return validate()" class="checkmark" >
-               <span class="text-extra-dark-gray alt-font text-large font-weight-500 margin-25px-bottom display-block" style="margin-top: -34px;margin-left: 39px;">Авторский Надзор</span></span>
-               <input type="checkbox" id="myCheck"  onclick="myFunction()" class="checkmark">
-               <span class="text-extra-dark-gray alt-font text-large font-weight-500 margin-25px-bottom display-block" style="margin-top: -34px;margin-left: 39px;">Коммерческое помещение</span></span>
                <div class="last-paragraph-no-margin" id="text" style="display:none">
                   <p  > 
                   <blockquote class="border-color-deep-pink" >  Расчет стоимости дизайн-проектов коммерческих помещений производится не по тарифу, а сугубо индивидуально. В итоге стоимост дизайн-проекта выходит намого дешевле чем считая по самому дешевомы тарифу!!!</p> </blockquote>
@@ -322,7 +269,6 @@
                       }
                   }
                </script>
-               <div role="alert" class="alert alert-dismissable bg-transparent alert-warning alert-massage-style-2"><a href="#" class="close" data-dismiss="alert" aria-label="close">×</a><strong>Выбрав авторский надзор!!!</strong> +50% к стоимости проекта , для надзора строительных работ и сдачи обьекта под ключ!!!</div>
                <button onClick="raschitat();" class="btn btn-small btn-deep-pink margin-30px-top sm-margin-10px-top xs-margin-three-top">Рассчитать стоимость</button>
                <div id="stoimost"></div>
                <script type="text/javascript">
