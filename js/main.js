@@ -346,7 +346,7 @@ $(window).resize(function (event) {
 $(document).ready(function () {
     "use strict";
 
-    $("#ploshad").on("change paste keyup", function() {
+    $("#ploshad, [name='supervision'], [name='Commercial']").on("change paste keyup", function() {
         var tarif = 1;
         console.log("test");
         if($("#ploshad").val() > 399)
@@ -359,8 +359,25 @@ $(document).ready(function () {
             tarif = 0;
         $('.priceDynamic').map(elem => {
             var curr = $($('.priceDynamic')[elem]);
-          console.log($("#ploshad").val(),curr,curr.attr('tarif'), tarif,$('.priceDynamic')[elem]);
-          curr.html(prices[curr.attr('tarif')][tarif]*$("#ploshad").val() + '₽' )  
+          console.log($('[name="supervision"]').is(':checked'),$('[name="Commercial"]').is(':checked'));
+        let multiplication = 1;
+          if($('[name="supervision"]').is(':checked')){
+                      multiplication = 1.5;
+                      $('.firstAlarm').show()
+                  }
+                  else{
+                      $('.firstAlarm').hide();
+                  }
+          let total = prices[curr.attr('tarif')][tarif]*$("#ploshad").val()*multiplication;
+          total = total?total + '₽':'';
+          if($('[name="Commercial"]').is(':checked')){
+                      total = 'Коммерческое помещение';
+                      $('.secondAlarm').show();
+                  }
+                  else{
+                      $('.secondAlarm').hide();
+                  }
+          curr.html( total );  
         })
     });
     // Bootsnav menu work with eualize height

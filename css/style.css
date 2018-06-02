@@ -3930,3 +3930,11 @@ aside .latest-post li figure {width: 75px;}
     font-weight: bold;
     height: 17px;
 }
+.secondAlarm{
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 56px;
+}
+.secondAlarm a{
+    line-height: 50px;
+}

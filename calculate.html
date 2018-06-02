@@ -130,19 +130,20 @@
             <div data-toggle="buttons" class="dlk-radio btn-group col-md-6 col-sm-6 col-xs-12 buttonsCheck">
               <label class="btn btn-primary conditionLabels">
                 <span class="fa fa-check glyphicon glyphicon-ok"></span>
-                <input type="checkbox" checked>Авторский Надзор
+                <input type="checkbox" name="supervision">Авторский Надзор
               </label>
             </div>
             <div data-toggle="buttons" class="dlk-radio btn-group col-md-6 col-sm-6 col-xs-12 buttonsCheck">
               <label class="btn btn-primary conditionLabels">
                 <span class="fa fa-check glyphicon glyphicon-ok"></span>
-                <input type="checkbox" checked>Коммерческое помещение
+                <input type="checkbox" name = "Commercial">Коммерческое помещение
               </label>
             </div>
           </div>
         </div>
           <div class="container">
-          <div role="alert" class="alert alertCustom alert-dismissable bg-transparent alert-warning alert-massage-style-2"><a href="#" class="close" data-dismiss="alert" aria-label="close">×</a><strong>Выбрав авторский надзор!!!</strong> +50% к стоимости проекта , для надзора строительных работ и сдачи обьекта под ключ!!!</div>
+          <div role="alert" style="display:none" class="firstAlarm alert alertCustom alert-dismissable bg-transparent alert-warning alert-massage-style-2"><a href="#" class="close" data-dismiss="alert" aria-label="close">×</a><strong>Выбрав авторский надзор!!!</strong> +50% к стоимости проекта , для надзора строительных работ и сдачи обьекта под ключ!!!</div>
+          <div role="alert" style="display:none" class="secondAlarm alert alertCustom alert-dismissable bg-transparent alert-warning alert-massage-style-2"><a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>Расчет стоимости дизайн-проектов коммерческих помещений производится не по тарифу, а сугубо индивидуально. В итоге стоимост дизайн-проекта выходит намого дешевле чем считая по самому дешевомы тарифу!!!</div>
 
             <!-- Start Tiles -->
                <div class="row-no-padding tiles">
@@ -160,7 +161,7 @@
                             400+квм - 200р/квм</br>
                           </div>
                         </div>
-                        <div class="priceDynamic text-extra-dark-gray" tarif=0>0₽</div>
+                        <div class="priceDynamic text-extra-dark-gray" tarif=0></div>
                         <div class="feature-box-overlay bg-deep-pink"></div>
                     </div>
                 </div>
@@ -181,7 +182,7 @@
                             400+квм - 500р/квм</br>
                           </div>
                         </div>
-                        <div class="priceDynamic text-extra-dark-gray" tarif=1>0₽</div>
+                        <div class="priceDynamic text-extra-dark-gray" tarif=1></div>
                         <div class="feature-box-overlay bg-deep-pink"></div>
                     </div>
                 </div>
@@ -202,7 +203,7 @@
                             400+квм - 850р/квм</br>
                           </div>
                         </div>
-                        <div class="priceDynamic text-extra-dark-gray" tarif=2>0₽</div>
+                        <div class="priceDynamic text-extra-dark-gray" tarif=2></div>
                         <div class="feature-box-overlay bg-deep-pink"></div>
                     </div>
                 </div>
@@ -223,7 +224,7 @@
                             400+квм - 1000р/квм</br>
                           </div>
                         </div>
-                        <div class="priceDynamic text-extra-dark-gray" tarif=3>0₽</div>
+                        <div class="priceDynamic text-extra-dark-gray" tarif=3></div>
                         <div class="feature-box-overlay bg-deep-pink"></div>
                     </div>
                 </div>
@@ -236,28 +237,8 @@
               <div class="tab-pane active" id="tab_default_1">
 
               <h6 class="text-center">СУГУБО ИНЖЕНЕРНЫЙ</h6>
-
-                <b>2D</b></br>
-                 1. Обмер</br>
-                 2. Планировочные решения (до полного соглаования) </br>
-                 3. План помещения с мебелью</br>
-                 4. Экспликация</br>
-                 5. План демонтажа/монтажа</br>
-                 6. План полов</br>
-                 7. План потолка</br>
-                 8. План розеток</br>
-                 9. План освитительных приборов с привязками к выключателям</br>
-                 10, Сантехника</br>
-                 11. План с размерами дверных проемов</br>
-                  <b>3D</b></br>
-                 1. 3D Визуализация планировочных решений (без мебели с однотонной отделкой) </br>
-
-
-              </div>
-              <div class="tab-pane" id="tab_default_2">
-
-              <h6 class="text-center">МИКРО</h6>
-
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
                 <b>2D</b></br>
                  1. Обмер</br>
                  2. Планировочные решения (до полного соглаования) </br>
@@ -268,11 +249,45 @@
                  7. План потолка</br>
                  8. План розеток</br>
                  9. Сантехника</br>
-                 10. Развертка стен (Ведомость отделки) </br>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                 10. План освитительных приборов с привязками к выключателям</br>
+                 11. План с размерами дверных проемов</br>
+                  <b>3D</b></br>
+                 1. 3D Визуализация планировочных решений (без мебели с однотонной отделкой) </br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+               </div>
+             </div>
+
+
+              </div>
+              <div class="tab-pane" id="tab_default_2">
+
+              <h6 class="text-center">МИКРО</h6>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <b>2D</b></br>
+                   1. Обмер</br>
+                   2. Планировочные решения (до полного соглаования) </br>
+                   3. План помещения с мебелью</br>
+                   4. Экспликация</br>
+                   5. План демонтажа/монтажа</br>
+                   6. План полов</br>
+                   7. План потолка</br>
+                   8. План розеток</br>
+                   9. Сантехника</br>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  10. Развертка стен (Ведомость отделки) </br>
                     <b>3D</b></br>
                  1. Дизайан интерьера (без мебели) </br>
                  2. 3D Визуализация всех помещений (отделка, пол, потолок) </br>
                  3. 3D Визуализация планировочных решений (без мебели) </br>
+                </div>
+              </div>
 
 
               </div>
@@ -280,52 +295,65 @@
 
               <h6 class="text-center">СТАНДАРТ</h6>
 
-                <b>2D</b></br>
-                 1. Обмер</br>
-                 2. Планировочные решения (до полного соглаования) </br>
-                 3. План помещения с мебелью</br>
-                 4. Экспликация</br>
-                 5. План демонтажа/монтажа</br>
-                 7. План полов</br>
-                 8. План потолка</br>
-                 9. План розеток</br>
-                 10. Сантехника</br>
-                 11. Развертка стен (Ведомость отделки) </br>
-                 12. Инжинерные чертежи всех декоративных и ГКЛ конструкций</br>
-                 13. Чертежи всей спроектированной мебели (для далнейшего изготовления) </br>
-                 <b>3D</b></br>
-                 1. Full Design. Дизайан интерьера со спроектированной мебелью, </br>
-                 электрикой и предметами декора</br>
-                 2. 3D Визуализация всех помещений (1-3 ракурс) </br>
- 
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <b>2D</b></br>
+                   1. Обмер</br>
+                   2. Планировочные решения (до полного соглаования) </br>
+                   3. План помещения с мебелью</br>
+                   4. Экспликация</br>
+                   5. План демонтажа/монтажа</br>
+                   6. План полов</br>
+                   7. План потолка</br>
+                   8. План розеток</br>
+                   9. Сантехника</br>
+                 </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                   10. Развертка стен (Ведомость отделки) </br>
+                   11. Инжинерные чертежи всех декоративных и ГКЛ конструкций</br>
+                   12. Чертежи всей спроектированной мебели (для далнейшего изготовления) </br>
+                   <b>3D</b></br>
+                   1. Full Design. Дизайан интерьера со спроектированной мебелью, </br>
+                   электрикой и предметами декора</br>
+                   2. 3D Визуализация всех помещений (1-3 ракурс) </br>
+                 </div>
+               </div>
+   
 
               </div>
               <div class="tab-pane" id="tab_default_4">
 
               <h6 class="text-center">МАКРО</h6>
 
-                <b>2D</b></br>
-                 1. Обмер</br>
-                 2. Планировочные решения (до полного соглаования) </br>
-                 3. План помещения с мебелью</br>
-                 4. Экспликация</br>
-                 5. План демонтажа/монтажа</br>
-                 6. План освитительных приборов с привязками к выключателям</br>
-                 7. План розеток</br>
-                 8. План потолка </br>
-                 9. План полов с указанием типа напольных покрытий</br>
-                 10. План с размерами дверных проемов</br>
-                 10. Сантехника</br>
-                 11. Развертка стен (Ведомость отделки) </br>
-                 12. Инжинерные чертежи всех декоративных и ГКЛ конструкций</br>
-                 13. Чертежи всей спроектированной мебели (для далнейшего изготовления) </br>
-                 14. Смета</br>
-                 <b>3D</b></br>
-                 1. Full Design. Дизайан Интерьера со спроектированной мебелью,  электрикой и предметами декора</br>
-                 2. 3D Визуализация всех помещений (2-4 ракурс) </br>
-                 3  3D Визуализация планировочных решений с мебелью и декором</br>
-                 4. Дизайн и 3D Визуализация Экстерьера (если таковой имеется) </br>
-                 5. Панорамная экскурсия 360 градусов</br>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <b>2D</b></br>
+                   1. Обмер</br>
+                   2. Планировочные решения (до полного соглаования) </br>
+                   3. План помещения с мебелью</br>
+                   4. Экспликация</br>
+                   5. План демонтажа/монтажа</br>
+                   6. План полов</br>
+                   7. План потолка </br>
+                   8. План розеток</br>
+                   9. Сантехника</br>
+                 </div>
+                 <div class="col-lg-6 col-md-6 col-sm-12">
+                   10. План полов с указанием типа напольных покрытий</br>
+                   11. План с размерами дверных проемов</br>
+                   12. План освитительных приборов с привязками к выключателям</br>
+                   13. Развертка стен (Ведомость отделки) </br>
+                   14. Инжинерные чертежи всех декоративных и ГКЛ конструкций</br>
+                   15. Чертежи всей спроектированной мебели (для далнейшего изготовления) </br>
+                   16. Смета</br>
+                   <b>3D</b></br>
+                   1. Full Design. Дизайан Интерьера со спроектированной мебелью,  электрикой и предметами декора</br>
+                   2. 3D Визуализация всех помещений (2-4 ракурс) </br>
+                   3  3D Визуализация планировочных решений с мебелью и декором</br>
+                   4. Дизайн и 3D Визуализация Экстерьера (если таковой имеется) </br>
+                   5. Панорамная экскурсия 360 градусов</br>
+                 </div>
+               </div>
 
               </div>
             </div>
@@ -341,14 +369,7 @@
                   <option value="makro">"Макро" Дизайн Проект</option>
                   
                   </select> -->
-               <div class="last-paragraph-no-margin" id="text" style="display:none">
-                  <p  > 
-                  <blockquote class="border-color-deep-pink" >  Расчет стоимости дизайн-проектов коммерческих помещений производится не по тарифу, а сугубо индивидуально. В итоге стоимост дизайн-проекта выходит намого дешевле чем считая по самому дешевомы тарифу!!!</p> </blockquote>
-               </div>
-               <button class="btn btn-small btn-deep-pink margin-30px-top sm-margin-10px-top xs-margin-three-top">Рассчитать стоимость</button>
-               <div id="stoimost"></div>
-               <script type="text/javascript">
-               </script>
+<!--                <button class="btn btn-small btn-deep-pink margin-30px-top sm-margin-10px-top xs-margin-three-top">Расчитать стоимость</button> -->
                <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 center-col margin-eight-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center last-paragraph-no-margin">
                   </div>
