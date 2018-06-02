@@ -4,6 +4,7 @@ var lastScroll = 0;
 //check for browser os
 var isMobile = false;
 var isiPhoneiPad = false;
+var prices = [[350,300,250,200],[800,700,600,500],[1300,1150,1000,850],[1500,1350,1200,1000]];
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     isMobile = true;
 }
@@ -344,6 +345,24 @@ $(window).resize(function (event) {
  ====================================== */
 $(document).ready(function () {
     "use strict";
+
+    $("#ploshad").on("change paste keyup", function() {
+        var tarif = 1;
+        console.log("test");
+        if($("#ploshad").val() > 399)
+            tarif = 3;
+        if($("#ploshad").val() < 400)
+            tarif = 2;
+        if($("#ploshad").val() < 150)
+            tarif = 1;
+        if($("#ploshad").val() < 50)
+            tarif = 0;
+        $('.priceDynamic').map(elem => {
+            var curr = $($('.priceDynamic')[elem]);
+          console.log($("#ploshad").val(),curr,curr.attr('tarif'), tarif,$('.priceDynamic')[elem]);
+          curr.html(prices[curr.attr('tarif')][tarif]*$("#ploshad").val() + '₽' )  
+        })
+    });
     // Bootsnav menu work with eualize height
     $("nav.navbar.bootsnav ul.nav").each(function () {
         $("li.dropdown", this).on("mouseenter", function () {

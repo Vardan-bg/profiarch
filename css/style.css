@@ -3925,4 +3925,8 @@ aside .latest-post li figure {width: 75px;}
 .listTiles .box-shadow-light{
     box-shadow: 0 -2px 3px 0 rgba(0,0,0,.1);
 }
-.tilesContent
+.priceDynamic{
+    font-size: 12px;
+    font-weight: bold;
+    height: 17px;
+}

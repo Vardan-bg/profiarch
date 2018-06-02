@@ -160,6 +160,7 @@
                             400+квм - 200р/квм</br>
                           </div>
                         </div>
+                        <div class="priceDynamic text-extra-dark-gray" tarif=0>0₽</div>
                         <div class="feature-box-overlay bg-deep-pink"></div>
                     </div>
                 </div>
@@ -180,6 +181,7 @@
                             400+квм - 500р/квм</br>
                           </div>
                         </div>
+                        <div class="priceDynamic text-extra-dark-gray" tarif=1>0₽</div>
                         <div class="feature-box-overlay bg-deep-pink"></div>
                     </div>
                 </div>
@@ -200,6 +202,7 @@
                             400+квм - 850р/квм</br>
                           </div>
                         </div>
+                        <div class="priceDynamic text-extra-dark-gray" tarif=2>0₽</div>
                         <div class="feature-box-overlay bg-deep-pink"></div>
                     </div>
                 </div>
@@ -220,6 +223,7 @@
                             400+квм - 1000р/квм</br>
                           </div>
                         </div>
+                        <div class="priceDynamic text-extra-dark-gray" tarif=3>0₽</div>
                         <div class="feature-box-overlay bg-deep-pink"></div>
                     </div>
                 </div>
@@ -341,117 +345,9 @@
                   <p  > 
                   <blockquote class="border-color-deep-pink" >  Расчет стоимости дизайн-проектов коммерческих помещений производится не по тарифу, а сугубо индивидуально. В итоге стоимост дизайн-проекта выходит намого дешевле чем считая по самому дешевомы тарифу!!!</p> </blockquote>
                </div>
-               <script>
-                  function myFunction() {
-                      var checkBox = document.getElementById("myCheck");
-                      var text = document.getElementById("text");
-                      if (checkBox.checked == true){
-                          text.style.display = "block";
-                      } else {
-                          text.style.display = "none";
-                      }
-                  }
-               </script>
-               <button onClick="raschitat();" class="btn btn-small btn-deep-pink margin-30px-top sm-margin-10px-top xs-margin-three-top">Рассчитать стоимость</button>
+               <button class="btn btn-small btn-deep-pink margin-30px-top sm-margin-10px-top xs-margin-three-top">Рассчитать стоимость</button>
                <div id="stoimost"></div>
                <script type="text/javascript">
-                  function raschitat() {
-                      makeres  = document.getElementById('ploshad').value;
-                      cvet  = document.getElementById('cvet').value;
-                      switch (cvet) {
-                          case "sugubo":
-                              tarif_1(makeres);
-                              break
-                          case "mikro":
-                              tarif_2(makeres);
-                              break
-                          case "standart":
-                              tarif_3(makeres);
-                              break
-                          case "makro":
-                              tarif_4(makeres);
-                              break
-                  
-                      }
-                      makeres  = document.getElementById('ploshad').value;
-                      if (document.getElementById('LetterNeed').checked)
-                      {
-                  
-                          stoimost = makeres*cena + makeres*cena/2;
-                  
-                      }
-                      else {stoimost = makeres*cena;}
-                      document.getElementById('stoimost').innerHTML = "Стоимость равна: "+ stoimost +" р.";
-                  
-                  }
-                  
-                  function tarif_1(makeres) {
-                      if (makeres < 50)
-                      {cena = 350;}
-                      else
-                      if (makeres > 50 && makeres < 150 )
-                      {cena = 300;}
-                      else
-                      if (makeres > 150 && makeres < 400 )
-                      {cena = 250;}
-                      else
-                      if (makeres > 400 )
-                      {cena = 200;}
-                  
-                  }
-                  function tarif_2(makeres){
-                      if (makeres < 50)
-                      {cena = 800;}
-                      else
-                      if (makeres > 50 && makeres < 150 )
-                      {cena = 700;}
-                      else
-                      if (makeres > 150 && makeres < 400 )
-                      {cena = 600;}
-                      else
-                      if (makeres > 400 )
-                      {cena = 500;}
-                  
-                  }
-                  function tarif_3(makeres) {
-                      if (makeres < 50)
-                      {cena = 1300;}
-                      else
-                      if (makeres > 50 && makeres < 150 )
-                      {cena = 1150;}
-                      else
-                      if (makeres > 150 && makeres < 400 )
-                      {cena = 1000;}
-                      else
-                      if (makeres > 400 )
-                      {cena = 850;}
-                  
-                  }
-                  function tarif_4(makeres){
-                      if (makeres < 50)
-                      {cena = 1500;}
-                      else
-                      if (makeres > 50 && makeres < 150 )
-                      {cena = 1350;}
-                      else
-                      if (makeres > 150 && makeres < 400 )
-                      {cena = 1200;}
-                      else
-                      if (makeres > 400 )
-                      {cena = 1000;}
-                  
-                  }
-                  
-                   function popup()
-                   {
-                       var checkBox = document.getElementById("myCheck");
-                       var text = document.getElementById("text");
-                       if (checkBox.checked == true){
-                           text.style.display = "block";
-                       } else {
-                           text.style.display = "none";
-                       }
-                   }
                </script>
                <div class="row">
                   <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 center-col margin-eight-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center last-paragraph-no-margin">
