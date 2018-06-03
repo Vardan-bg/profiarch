@@ -345,7 +345,7 @@ $(window).resize(function (event) {
  ====================================== */
 $(document).ready(function () {
     "use strict";
-
+    $('.percentCalc').hide();
     $("#ploshad, [name='supervision'], [name='Commercial']").on("change paste keyup", function() {
         var tarif = 1;
         console.log("test");
@@ -359,17 +359,27 @@ $(document).ready(function () {
             tarif = 0;
         $('.priceDynamic').map(elem => {
             var curr = $($('.priceDynamic')[elem]);
-          console.log($('[name="supervision"]').is(':checked'),$('[name="Commercial"]').is(':checked'));
         let multiplication = 1;
-          if($('[name="supervision"]').is(':checked')){
-                      multiplication = 1.5;
-                      $('.firstAlarm').show()
-                  }
-                  else{
-                      $('.firstAlarm').hide();
-                  }
-          let total = prices[curr.attr('tarif')][tarif]*$("#ploshad").val()*multiplication;
-          total = total?total + '₽':'';
+        let total = prices[curr.attr('tarif')][tarif]*$("#ploshad").val()
+          if($('[name="supervision"]').is(':checked') && !$('[name="Commercial"]').is(':checked')){
+            $('.firstAlarm').show();
+            $($('.percentCalc')[elem]).show();
+            if(total <= 70000)
+                multiplication = 1.5;
+            else
+                if(total <= 300000){
+                    multiplication = (1.5 - ((total - 70000) / 230000) / 4);
+                }
+                else
+                    multiplication = 1.25;
+          }
+          else{
+                $('.firstAlarm').hide();
+                $($('.percentCalc')[elem]).hide();
+          }
+          total = total * multiplication;
+          $($('.percentage')[elem]).html(((multiplication-1)*100).toFixed(2) + "%");
+          total = total?total.toFixed(2) + '₽':'';
           if($('[name="Commercial"]').is(':checked')){
                       total = 'Коммерческое помещение';
                       $('.secondAlarm').show();
