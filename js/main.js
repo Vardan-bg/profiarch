@@ -5,6 +5,10 @@ var lastScroll = 0;
 var isMobile = false;
 var isiPhoneiPad = false;
 var prices = [[350,300,250,200],[800,700,600,500],[1300,1150,1000,850],[1500,1350,1200,1000]];
+var startPercent = 0.5;
+var endPercent = 0.25;
+var startPrice = 70000;
+var endPrice = 230000;
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     isMobile = true;
 }
@@ -368,7 +372,7 @@ $(document).ready(function () {
                 multiplication = 1.5;
             else
                 if(total <= 300000){
-                    multiplication = (1.5 - ((total - 70000) / 230000) / 4);
+                    multiplication = (1 + startPercent - ((total - startPrice) / endPrice) * endPercent);
                 }
                 else
                     multiplication = 1.25;
