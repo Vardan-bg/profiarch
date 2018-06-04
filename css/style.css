@@ -3850,7 +3850,7 @@ aside .latest-post li figure {width: 75px;}
 }
 .conditionLabels{
     width: 100%;
-    border-color: #204d74;
+    border-color: #333;
     border-width: 1px;
 }
 .conditionCheck{
@@ -3940,4 +3940,30 @@ aside .latest-post li figure {width: 75px;}
 }
 .slider.slider-horizontal{
     width: 100%;
+}
+.conditionLabels.btn-primary{
+    background-color: #797f86;
+}
+.conditionLabels.btn-primary.active{
+    background-color: #9c420d;
+    border-color: #333!important;
+}
+
+.buttonsCheck .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+        border-color: #333!important;
+        background-color: #9c420d;
+}
+.conditionLabels .btn-primary:hover {
+    border-color: #333!important;
+}
+.absoluteContacts{
+    position: absolute;
+    right: 90px;
+    color: white;
+    top: 100px;
+    z-index: 1;
+}
+
+#navbar-collapse-toggle-1 > ul > li > a{
+    visibility: visible;
 }

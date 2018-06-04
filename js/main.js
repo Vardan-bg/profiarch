@@ -348,6 +348,7 @@ $(window).resize(function (event) {
  START READY
  ====================================== */
 $(document).ready(function () {
+    $('#content').load('/header.html');
     "use strict";
     $('.percentCalc').hide();
     $("#ploshad, [name='supervision'], [name='Commercial']").on("change paste keyup", function() {
@@ -378,9 +379,12 @@ $(document).ready(function () {
                     multiplication = 1.25;
           }
           else{
-                $('.firstAlarm').hide();
                 $($('.percentCalc')[elem]).hide();
           }
+          if($('[name="supervision"]').is(':checked'))
+            $('.firstAlarm').show();
+          else
+            $('.firstAlarm').hide();
           total = total * multiplication;
           $($('.percentage')[elem]).html(((multiplication-1)*100).toFixed(2) + "%");
           total = total?total.toFixed(2) + '₽':'';
@@ -919,8 +923,7 @@ $(document).ready(function () {
         });
     } else {
         $('.inner-link').smoothScroll({
-            speed: 900,
-            offset: -59
+            speed: 900
         });
     }
 
@@ -2360,7 +2363,6 @@ $(document).ready(function () {
  START Page Load
  ====================================== */
 $(window).load(function () {
-    console.log($('html, body'));
     var hash = window.location.hash.substr(1);
     if (hash != "") {
         setTimeout(function () {

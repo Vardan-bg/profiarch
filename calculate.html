@@ -45,37 +45,7 @@
    </head>
    <body>
       <!-- start header -->
-      <header>
-         <!-- start navigation -->
-         <nav class="navbar navbar-default bootsnav navbar-top header-light bg-transparent nav-box-width white-link">
-            <div class="container-fluid nav-header-container">
-               <div class="row">
-                  <!-- start logo -->
-                  <div class="col-md-2 col-xs-5">
-                     <a href="index.html" title="Pofo" class="logo"><img src="images/logo.png" data-at2x="images/logo@2x.png" class="logo-dark" alt="Pofo"><img src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt="Pofo" class="logo-light default"></a>
-                  </div>
-                  <!-- end logo -->
-                  <div class="header-searchbar">
-                     <a href="#search-header" class="header-search-form text-white"><i class="fa fa-search search-button"></i></a>
-                     <!-- search input-->
-                     <form id="search-header" method="post" action="index.html" name="search-header" class="mfp-hide search-form-result">
-                        <div class="search-form position-relative">
-                           <button type="submit" class="fa fa-search close-search search-button"></button>
-                           <input type="text" name="search" class="search-input" placeholder="Enter your keywords..." autocomplete="off">
-                        </div>
-                     </form>
-                  </div>
-                  <div class="header-social-icon xs-display-none">
-                     <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                     <a href="https://twitter.com/" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                     <a href="https://dribbble.com/" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a>                          
-                  </div>
-               </div>
-            </div>
-            </div>
-         </nav>
-         <!-- end navigation --> 
-      </header>
+        <header id="content"></header>
       <!-- end header -->
       <!-- start page title section -->
       <section class="no-padding one-third-screen position-relative wow fadeIn">
@@ -119,7 +89,7 @@
         <div class="container-custom">
           <div class = "container">
             <div class="col-md-4 col-sm-4 col-xs-12">
-              <span class=" headTextHeight text-extra-dark-gray alt-font text-large font-weight-500 display-block">Калькулятор стоимости проекта</span
+              <span id="tarif" class=" headTextHeight text-extra-dark-gray alt-font text-large font-weight-500 display-block">Калькулятор стоимости проекта</span
               >
             </div>
             <input type="number" id="ploshad" value="" class="col-md-8 col-sm-8 col-xs-12" placeholder="укажите площадь помещения">
