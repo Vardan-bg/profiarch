@@ -81,8 +81,12 @@ function init_scroll_navigate() {
     var scrollPos = $(document).scrollTop();
     menu_links.each(function () {
         var currLink = $(this);
-        if (currLink.attr("href").indexOf("#") > -1 && $(currLink.attr("href")).length > 0) {
-            var refElement = $(currLink.attr("href"));
+        var refElement;
+        if(currLink.attr("href").indexOf('/') > -1)
+            var refElement = $(currLink.attr("href").split("/")[1]);
+        else
+            refElement = $(currLink.attr("href"));
+        if (currLink.attr("href").indexOf("#") > -1 && refElement.length > 0) {
             if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
                 menu_links.removeClass("active");
                 currLink.addClass("active");
@@ -347,8 +351,15 @@ $(window).resize(function (event) {
 /* ===================================
  START READY
  ====================================== */
+/*    if($('#contentGallery').length > 0)
+        $('#contentGallery').load('headerGallery.html');*/
 $(document).ready(function () {
-    $('#content').load('header.html');
+    if($('#content').length > 0){
+        $('#content').load('header.html', function() {
+            if($('#content').attr('class') == 'no-white-link')
+                $('.navbar-default').removeClass('white-link');
+        });
+    }
     "use strict";
     $('.percentCalc').hide();
     $("#ploshad, [name='supervision'], [name='Commercial']").on("change paste keyup", function() {
@@ -2147,8 +2158,7 @@ $(document).ready(function () {
         else
             $(this).addClass('active');
     });
-
-    $('button.navbar-toggle').on("click", function (e) {
+    $('body').on('click', 'button.navbar-toggle', function(e) {
         if (isMobile) {
             $(".cart-content").css('opacity', '0');
             $(".cart-content").css('visibility', 'hidden');
@@ -2385,20 +2395,3 @@ $(window).load(function () {
         }, 500);
     }
 });
-/* ===================================
- END Page Load
- ====================================== */
-/*$('html, body')[0].onfocus = function(){
-    $('img').css('left',e.pageX+"px");
-    $('img').css('top',e.pageY+"px");
-
-};
-*/
-window.onload = function(){ 
-  $('.logo-light')[0].onmouseover = function(e){
-    console.log('test')
-    $('.logo-light')[0].style.position = 'absolute';
-    $('.logo-light')[0].style.left = e.pageX+'px';
-    $('.logo-light')[0].style.top = e.pageY+'px';
-  };
-}
