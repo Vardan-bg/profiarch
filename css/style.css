@@ -3967,3 +3967,8 @@ aside .latest-post li figure {width: 75px;}
 #navbar-collapse-toggle-1 > ul > li > a{
     visibility: visible;
 }
+#tarif{
+    position: absolute;
+        margin-top: -60px;
+    opacity: 1;
+}

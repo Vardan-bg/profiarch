@@ -2371,10 +2371,12 @@ $(window).load(function () {
                         scrollAnimation = 'easeInOutExpo';
                 var target = '#' + hash;
                 if ($(target).length > 0) {
-
+                    var shift = 0;
+                    if ('scroll',$(target).offset().top > $(document).scrollTop())
+                        shift = 60;
                     $('html, body').stop()
                             .animate({
-                                'scrollTop': $(target).offset().top
+                                'scrollTop': $(target).offset().top + shift
                             }, scrollAnimationTime, scrollAnimation, function () {
                                 window.location.hash = target;
                             });
