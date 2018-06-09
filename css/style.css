@@ -3901,7 +3901,7 @@ aside .latest-post li figure {width: 75px;}
 .listTiles{
     border-bottom: 0px!important;
 }
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+.listTiles.nav-tabs>li.active>a, .listTiles.nav-tabs>li.active>a:focus, .listTiles.nav-tabs>li.active>a:hover{
     color: #fff!important;
     border: 0!important;
     border-bottom: 0!important;
