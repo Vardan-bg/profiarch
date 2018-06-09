@@ -348,7 +348,7 @@ $(window).resize(function (event) {
  START READY
  ====================================== */
 $(document).ready(function () {
-    $('#content').load('/header.html');
+    $('#content').load('header.html');
     "use strict";
     $('.percentCalc').hide();
     $("#ploshad, [name='supervision'], [name='Commercial']").on("change paste keyup", function() {
