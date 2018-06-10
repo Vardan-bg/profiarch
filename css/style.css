@@ -3025,14 +3025,16 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
 .portfolio-filter-tab-1 li {margin: 0 25px; display: inline-block; float: none}
 .portfolio-filter-tab-1 li a {background: transparent; border: none; padding:0 0 2px 0; display: inline; color:#6f6f6f; margin: 0;}
 .portfolio-filter-tab-1 li a:hover, .portfolio-filter-tab-1 li a:focus {background: transparent; border-bottom: 1px solid #232323; color:#232323}
-.portfolio-filter-tab-1 li.active a {background: transparent !important; border-bottom: 1px solid #232323; color: #232323;
-
--moz-text-decoration-line: underline;
--moz-text-decoration-style: dotted;   
--webkit-text-decoration-line: underline;
--webkit-text-decoration-style: dotted;
-text-decoration-line: underline;
-text-decoration-style: dotted;
+.portfolio-filter-tab-1 li.active a {
+    background: transparent !important; 
+    border-bottom: 1px solid #232323;
+     color: #232323;
+    -moz-text-decoration-line: underline;
+    -moz-text-decoration-style: dotted;   
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-style: dotted;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
 }
 
 /* portfolio filter tab style 2 */
