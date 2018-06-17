@@ -1,5 +1,6 @@
 #viewButton{
-    width:418px;
+	width: 100%;
+    max-width: 418px;
     background-color:#6F6B68;
     font-size:30px;
     padding:20px 10px;

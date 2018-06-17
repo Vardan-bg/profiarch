@@ -3850,7 +3850,7 @@ aside .latest-post li figure {width: 75px;}
 }
 .tilesContent{
     font-size: 12px;
-    padding:15px;
+    padding:10px;
 }
 .firstTile{
     padding-right:0px!important;
@@ -3936,7 +3936,7 @@ aside .latest-post li figure {width: 75px;}
     box-shadow: 0 -2px 3px 0 rgba(0,0,0,.1);
 }
 .priceDynamic{
-    font-size: 12px;
+    font-size: 20px;
     font-weight: bold;
     height: 17px;
 }
@@ -3968,11 +3968,44 @@ aside .latest-post li figure {width: 75px;}
 }
 .absoluteContacts{
     position: absolute;
-    right: 90px;
     color: white;
-    top: 100px;
-    z-index: 1;
-    font-size: 20px;
+}
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 300px) {
+    .absoluteContacts{
+        right: 30px;
+        top: 75px;
+        z-index: 100;
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px){
+    .absoluteContacts{
+        right: 30px;
+        top: 75px;
+        z-index: 100;
+        font-size: 16px;
+    }
+}
+@media (min-width: 992px) {
+    .absoluteContacts{
+        right: 90px;
+        top: 100px;
+        z-index: 100;
+        font-size: 18px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .absoluteContacts{
+        right: 90px;
+        top: 100px;
+        z-index: 100;
+        font-size: 20px;
+    }
 }
 
 #navbar-collapse-toggle-1 > ul > li > a{
@@ -4003,4 +4036,10 @@ aside .latest-post li figure {width: 75px;}
     font-size: 12px;
     padding:15px;
     background-color: #fff;
+}
+.TarifPercentCalc{
+    font-size: 14px;
+}
+.percentCalc{
+    font-size: 14px;
 }

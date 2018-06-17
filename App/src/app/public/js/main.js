@@ -393,7 +393,7 @@ $(document).ready(function () {
         else
             $($('.TarifPercentCalc')[elem]).show();
         console.log(tarif)
-        $($('.TarifPercentage')[elem]).html(tarif.toFixed(1) + " р/квм");
+        $($('.TarifPercentage')[elem]).html(tarif.toFixed(0) + " р/квм");
           if($('[name="supervision"]').is(':checked') && !$('[name="Commercial"]').is(':checked')){
             $('.firstAlarm').show();
             $($('.percentCalc')[elem]).show();
