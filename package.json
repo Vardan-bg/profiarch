@@ -17,6 +17,7 @@
     "webpack": "webpack --config webpack.config.js"
   },
   "dependencies": {
+    "@angular/cli": "^6.0.8",
     "@nestjs/common": "^5.0.0",
     "@nestjs/core": "^5.0.0",
     "@nestjs/microservices": "^5.0.0",

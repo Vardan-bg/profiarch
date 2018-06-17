@@ -1,0 +1,464 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+   <head>
+      <!-- title -->
+      <title>PROFI</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+      <!-- description -->
+      <!-- keywords -->
+      <!-- favicon -->
+      <link rel="shortcut icon" href="images/favicon.png">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+      <!-- animation -->
+      <link rel="stylesheet" href="css/animate.css" />
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <!-- et line icon --> 
+      <link rel="stylesheet" href="css/et-line-icons.css" />
+      <!-- font-awesome icon -->
+      <link rel="stylesheet" href="css/font-awesome.min.css" />
+      <!-- themify icon -->
+      <link rel="stylesheet" href="css/themify-icons.css">
+      <!-- swiper carousel -->
+      <link rel="stylesheet" href="css/swiper.min.css">
+      <!-- justified gallery  -->
+      <link rel="stylesheet" href="css/justified-gallery.min.css">
+      <!-- magnific popup -->
+      <link rel="stylesheet" href="css/magnific-popup.css" />
+      <!-- revolution slider -->
+      <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" media="screen" />
+      <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+      <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+      <!-- bootsnav -->
+      <link rel="stylesheet" href="css/bootsnav.css">
+      <!-- style -->
+      <link rel="stylesheet" href="css/style.css" />
+      <!-- responsive css -->
+      <link rel="stylesheet" href="css/responsive.css" />
+      <!--[if IE]>
+      <script src="js/html5shiv.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <!-- start header -->
+        <header id="content"></header>
+      <!-- end header -->
+      <!-- start page title section -->
+      <section class="no-padding one-third-screen position-relative wow fadeIn">
+         <div class="opacity-medium bg-extra-dark-gray z-index-0"></div>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 display-table one-third-screen page-title-large center-col">
+                  <div class="display-table-cell vertical-align-middle text-center">
+                     <!-- start sub title -->
+                     <span class="display-block text-white opacity6 margin-10px-bottom alt-font">PROFI - Дом моей мечты!</span>
+                     <!-- end sub title -->
+                     <!-- start page title -->
+                     <h1 class="alt-font text-white font-weight-500 width-55 sm-width-80 xs-width-100 center-col no-margin-bottom">Ищешь свой идеальный дом?</h1>
+                     <!-- end page title -->
+                     <div class="col-md-6 col-sm-6 col-xs-10 center-col md-margin-top sm-margin-ten-top xs-margin-seven-top">
+                        <div class="down-section text-center"><a href="#section-down" class="inner-link"><i class="ti-arrow-down icon-extra-small text-white bg-deep-pink padding-15px-all xs-padding-10px-all border-radius-100"></i></a></div>
+                        <!-- <button onClick="raschitat();" class="btn btn-small btn-deep-pink margin-30px-top sm-margin-10px-top xs-margin-three-top">Рассчитать</button> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="swiper-auto-fade swiper-container z-index-minus2 position-absolute top-0 width-100 height-100">
+            <div class="swiper-wrapper">
+               <!-- start slider item -->
+               <div class="swiper-slide cover-background one-third-screen" style="background-image:url(images/1212123123165845587880000.png);"></div>
+               <!-- end slider item -->
+               <!-- start slider item -->
+               <div class="swiper-slide cover-background one-third-screen" style="background-image:url(images/knkj26.png);"></div>
+               <!-- end slider item -->
+               <!-- start slider item -->
+               <div class="swiper-slide cover-background one-third-screen" style="background-image:url(images/2626326565989000.png);"></div>
+               <!-- end slider item -->
+            </div>
+         </div>
+      </section>
+      <!-- end page title section -->
+      <!-- start contact form section -->
+      <!-- end contact form section -->
+      <section id="section-down" class="no-padding bg-light-gray wow fadeIn">
+        <div id="tarif"></div>
+        <div class="container-custom">
+          <div class = "container">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <span class=" headTextHeight text-extra-dark-gray alt-font text-large font-weight-500 display-block">Калькулятор стоимости проекта</span
+              >
+            </div>
+            <input type="number" id="ploshad" value="" class="col-md-8 col-sm-8 col-xs-12" placeholder="укажите площадь помещения">
+          </div>
+        </div>
+        <div class="container-custom">
+          <div class = "container">
+            <div data-toggle="buttons" class="dlk-radio btn-group col-md-6 col-sm-6 col-xs-12 buttonsCheck">
+              <label class="btn btn-primary conditionLabels">
+                <span class="fa fa-check glyphicon glyphicon-ok"></span>
+                <input type="checkbox" name="supervision">Авторский Надзор
+              </label>
+            </div>
+            <div data-toggle="buttons" class="dlk-radio btn-group col-md-6 col-sm-6 col-xs-12 buttonsCheck">
+              <label class="btn btn-primary conditionLabels">
+                <span class="fa fa-check glyphicon glyphicon-ok"></span>
+                <input type="checkbox" name = "Commercial">Коммерческое помещение
+              </label>
+            </div>
+          </div>
+        </div>
+          <div class="container">
+            <div role="alert" style="display:none" class="firstAlarm checkboxAlarm alert alertCustom alert-dismissable bg-transparent alert-warning alert-massage-style-2"><a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>По мере возрастания площади помещения процент надбавки за <strong>надзор строительных работ и сдачу обьекта под ключ</strong> пропорционально уменьшается от 50% до 25%!</div>
+            <div role="alert" style="display:none" class="secondAlarm checkboxAlarm alert alertCustom alert-dismissable bg-transparent alert-warning alert-massage-style-2"><a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>Расчет стоимости дизайн-проектов коммерческих помещений производится не по тарифу, а сугубо индивидуально. В итоге стоимость дизайн-проекта выходит намого дешевле чем считая по самому дешевомы тарифу!!!</div>
+
+            <!-- Start Tiles -->
+               <div class="row-no-padding tiles">
+              <ul class="row nav nav-tabs listTiles">
+                <li class="col-md-3 col-sm-3 col-xs-12 listNoPadding active">
+                  <a href="#tab_default_1" data-toggle="tab">
+                  <div class="firstTile sm-margin-30px-bottom wow fadeInUp last-paragraph-no-margin">
+                    <div class="bg-white box-shadow-light text-center padding-five-tb position-relative z-index-5 xs-padding-15px-lr">
+                        <div class="display-inline-block margin-20px-bottom xs-margin-10px-bottom"><i class="icon-desktop text-white icon-round-small bg-deep-pink"></i></div>
+                        <div class="alt-font text-extra-dark-gray font-weight-500">Сугубо Инженерный</br>
+                          <div class="tilesContent">
+                            До 50квм - 350р/квм</br>
+                            50-150квм - 300р/квм</br>
+                            150-400квм - 250р/квм</br>
+                            400+квм - 200р/квм</br>
+                            <div class="percentCalc">текущий процент: <b class="percentage">50%</b></div>
+                          </div>
+                        </div>
+                        <div class="priceDynamic text-extra-dark-gray alt-font font-weight-10000" tarif=0></div>
+                        <div class="feature-box-overlay bg-deep-pink"></div>
+                    </div>
+                </div>
+              </a>
+              </li>
+              <li class="col-md-3 col-sm-3 col-xs-12 listNoPadding">
+                <a href="#tab_default_2" data-toggle="tab">
+                <!-- end Services item -->
+                <!-- start Services item -->
+                <div class=" sm-margin-30px-bottom wow fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
+                    <div class="bg-white box-shadow-light text-center padding-five-tb position-relative z-index-5 xs-padding-15px-lr">
+                        <div class="display-inline-block margin-20px-bottom xs-margin-10px-bottom"><i class="icon-tools text-white icon-round-small bg-deep-pink"></i></div>
+                        <div class="alt-font text-extra-dark-gray font-weight-500">"Микро" Дизайн Проект</br>
+                          <div class="tilesContent">
+                            До 50квм - 800р/квм</br>
+                            50-150квм - 700р/квм</br>
+                            150-400квм - 600р/квм</br>
+                            400+квм - 500р/квм</br>
+                            <div class="percentCalc">текущий процент: <b class="percentage">50%</b></div>
+                          </div>
+                        </div>
+                        <div class="priceDynamic text-extra-dark-gray alt-font font-weight-10000" tarif=1></div>
+                        <div class="feature-box-overlay bg-deep-pink"></div>
+                    </div>
+                </div>
+                </a>
+                </li>
+                <li class="col-md-3 col-sm-3 col-xs-12 listNoPadding">
+                <a href="#tab_default_3" data-toggle="tab">
+                <!-- end Services item -->
+                <!-- start Services item -->
+                <div class=" xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-padding-15px-lr" data-wow-delay="0.4s">
+                    <div class="bg-white box-shadow-light text-center padding-five-tb position-relative z-index-5 height-100">
+                        <div class="display-inline-block margin-20px-bottom xs-margin-10px-bottom"><i class="icon-scissors text-white icon-round-small bg-deep-pink"></i></div>
+                        <div class="alt-font text-extra-dark-gray font-weight-500">"Стандарт" Дизайн Проект</br>
+                          <div class="tilesContent">
+                            До 50квм - 1300р/квм</br>
+                            50-150квм - 1150р/квм</br>
+                            150-400квм - 1000р/квм</br>
+                            400+квм - 850р/квм</br>
+                            <div class="percentCalc">текущий процент: <b class="percentage">50%</b></div>
+                          </div>
+                        </div>
+                        <div class="priceDynamic text-extra-dark-gray alt-font font-weight-10000" tarif=2></div>
+                        <div class="feature-box-overlay bg-deep-pink"></div>
+                    </div>
+                </div>
+                </a>
+                </li>
+                <!-- end Services item -->
+                <!-- start Services item -->
+                <li class="col-md-3 col-sm-3 col-xs-12 listNoPadding">
+                <a href="#tab_default_4" data-toggle="tab">
+                <div class=" wow fadeInUp last-paragraph-no-margin xs-padding-15px-lr" data-wow-delay="0.6s">
+                    <div class="bg-white box-shadow-light text-center padding-five-tb position-relative z-index-5 height-100">
+                        <div class="display-inline-block margin-20px-bottom xs-margin-10px-bottom"><i class="icon-laptop text-white icon-round-small bg-deep-pink"></i></div>
+                        <div class="alt-font text-extra-dark-gray font-weight-500">"Макро" Дизайн Проект</br>
+                          <div class="tilesContent">
+                            До 50квм - 1500р/квм</br>
+                            50-150квм - 1350р/квм</br>
+                            150-400квм - 1200р/квм</br>
+                            400+квм - 1000р/квм</br>
+                            <div class="percentCalc">текущий процент: <b class="percentage">50%</b></div>
+                          </div>
+                        </div>
+                        <div class="priceDynamic text-extra-dark-gray alt-font font-weight-10000" tarif=3></div>
+                        <div class="feature-box-overlay bg-deep-pink"></div>
+                    </div>
+                </div>
+              </a>
+              </li>
+            </ul>
+               </div>
+            <!-- End Tiles -->
+            <div class="tab-content tilesContent">
+              <div class="tab-pane active" id="tab_default_1">
+
+              <h6 class="text-center">СУГУБО ИНЖЕНЕРНЫЙ</h6>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                <b>2D</b></br>
+                 1. Обмер</br>
+                 2. Планировочные решения (до полного соглаования) </br>
+                 3. План помещения с мебелью</br>
+                 4. Экспликация</br>
+                 5. План демонтажа/монтажа</br>
+                 6. План полов</br>
+                 7. План потолка</br>
+                 8. План розеток</br>
+                 9. Сантехника</br>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                 10. План освитительных приборов с привязками к выключателям</br>
+                 11. План с размерами дверных проемов</br>
+                  <b>3D</b></br>
+                 1. 3D Визуализация планировочных решений (без мебели с однотонной отделкой) </br>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+               </div>
+             </div>
+
+
+              </div>
+              <div class="tab-pane" id="tab_default_2">
+
+              <h6 class="text-center">МИКРО</h6>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <b>2D</b></br>
+                   1. Обмер</br>
+                   2. Планировочные решения (до полного соглаования) </br>
+                   3. План помещения с мебелью</br>
+                   4. Экспликация</br>
+                   5. План демонтажа/монтажа</br>
+                   6. План полов</br>
+                   7. План потолка</br>
+                   8. План розеток</br>
+                   9. Сантехника</br>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  10. Развертка стен (Ведомость отделки) </br>
+                    <b>3D</b></br>
+                 1. Дизайан интерьера (без мебели) </br>
+                 2. 3D Визуализация всех помещений (отделка, пол, потолок) </br>
+                 3. 3D Визуализация планировочных решений (без мебели) </br>
+                </div>
+              </div>
+
+
+              </div>
+              <div class="tab-pane" id="tab_default_3">
+
+              <h6 class="text-center">СТАНДАРТ</h6>
+
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <b>2D</b></br>
+                   1. Обмер</br>
+                   2. Планировочные решения (до полного соглаования) </br>
+                   3. План помещения с мебелью</br>
+                   4. Экспликация</br>
+                   5. План демонтажа/монтажа</br>
+                   6. План полов</br>
+                   7. План потолка</br>
+                   8. План розеток</br>
+                   9. Сантехника</br>
+                 </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                   10. Развертка стен (Ведомость отделки) </br>
+                   11. Инжинерные чертежи всех декоративных и ГКЛ конструкций</br>
+                   12. Чертежи всей спроектированной мебели (для далнейшего изготовления) </br>
+                   <b>3D</b></br>
+                   1. Full Design. Дизайан интерьера со спроектированной мебелью, </br>
+                   электрикой и предметами декора</br>
+                   2. 3D Визуализация всех помещений (1-3 ракурс) </br>
+                 </div>
+               </div>
+   
+
+              </div>
+              <div class="tab-pane" id="tab_default_4">
+
+              <h6 class="text-center">МАКРО</h6>
+
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <b>2D</b></br>
+                   1. Обмер</br>
+                   2. Планировочные решения (до полного соглаования) </br>
+                   3. План помещения с мебелью</br>
+                   4. Экспликация</br>
+                   5. План демонтажа/монтажа</br>
+                   6. План полов</br>
+                   7. План потолка </br>
+                   8. План розеток</br>
+                   9. Сантехника</br>
+                 </div>
+                 <div class="col-lg-6 col-md-6 col-sm-12">
+                   10. План полов с указанием типа напольных покрытий</br>
+                   11. План с размерами дверных проемов</br>
+                   12. План освитительных приборов с привязками к выключателям</br>
+                   13. Развертка стен (Ведомость отделки) </br>
+                   14. Инжинерные чертежи всех декоративных и ГКЛ конструкций</br>
+                   15. Чертежи всей спроектированной мебели (для далнейшего изготовления) </br>
+                   16. Смета</br>
+                   <b>3D</b></br>
+                   1. Full Design. Дизайан Интерьера со спроектированной мебелью,  электрикой и предметами декора</br>
+                   2. 3D Визуализация всех помещений (2-4 ракурс) </br>
+                   3  3D Визуализация планировочных решений с мебелью и декором</br>
+                   4. Дизайн и 3D Визуализация Экстерьера (если таковой имеется) </br>
+                   5. Панорамная экскурсия 360 градусов</br>
+                 </div>
+               </div>
+
+              </div>
+            </div>
+            
+
+            <form id="contact-form" action="javascript:void(0)" method="post">
+            <div>
+               <div id="success-contact-form" class="no-margin-lr"></div>
+               <!--                         <select id="cvet">
+                  <option value="sugubo">Сугубо Инженерный</option>
+                  <option value="mikro">"Микро" Дизайн Проект</option>
+                  <option value="standart">"Стандарт" Дизайн Проект</option>
+                  <option value="makro">"Макро" Дизайн Проект</option>
+                  
+                  </select> -->
+<!--                <button class="btn btn-small btn-deep-pink margin-30px-top sm-margin-10px-top xs-margin-three-top">Расчитать стоимость</button> -->
+               <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 center-col margin-eight-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center last-paragraph-no-margin">
+                  </div>
+               </div>
+               <!--  <div class="row equalize xs-equalize-auto">
+                  -->
+
+               <!-- end Services item -->
+            </div>
+         </div>
+      </section>
+      <!-- start footer --> 
+      <footer class="footer-classic-dark bg-extra-dark-gray padding-five-bottom xs-padding-30px-bottom">
+         <div class="bg-dark-footer padding-50px-tb xs-padding-30px-tb">
+            <div class="container">
+               <div class="row equalize xs-equalize-auto">
+                  <!-- start slogan -->
+                  <div class="col-md-4 col-sm-5 col-xs-12 text-center alt-font display-table xs-text-center xs-margin-15px-bottom">
+                     <div class="display-table-cell vertical-align-middle">
+                        &copy; 2017 PROFY is Proudly Powered by LusineVahanyan@gmail.com.
+                     </div>
+                  </div>
+                  <!-- end slogan -->
+                  <!-- start logo -->
+                  <div class="col-md-4 col-sm-2 col-xs-12 text-center display-table xs-margin-10px-bottom">
+                     <div class="display-table-cell vertical-align-middle">
+                        <a href="index.html"><img class="footer-logo" src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt=""></a>
+                     </div>
+                  </div>
+                  <!-- end logo -->
+                  <!-- start social media -->
+                  <div class="col-md-4 col-sm-5 col-xs-12 col-xs-12 text-center display-table xs-text-center">
+                     <div class="display-table-cell vertical-align-middle">
+                        <span class="alt-font margin-20px-right">Найди нас в соцсетях</span>
+                        <div class="social-icon-style-8 display-inline-block vertical-align-middle">
+                           <ul class="small-icon no-margin-bottom">
+                              <li><a class="facebook text-white" href="https://www.facebook.com/ProfiArch/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                              <li><a class="twitter text-white" href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                              <li><a class="google text-white" href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                              <li><a class="instagram text-white" href="https://instagram.com/" target="_blank"><i class="fa fa-instagram no-margin-right" aria-hidden="true"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end social media -->
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- start scroll to top -->
+      <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
+      <!-- end scroll to top  -->
+      <!-- javascript libraries -->
+      <script type="text/javascript" src="js/jquery.js"></script>
+      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+      <script type="text/javascript" src="js/skrollr.min.js"></script>
+      <script type="text/javascript" src="js/smooth-scroll.js"></script>
+      <script type="text/javascript" src="js/jquery.appear.js"></script>
+      <!-- menu navigation -->
+      <script type="text/javascript" src="js/bootsnav.js"></script>
+      <script type="text/javascript" src="js/jquery.nav.js"></script>
+      <!-- animation -->
+      <script type="text/javascript" src="js/wow.min.js"></script>
+      <!-- page scroll -->
+      <script type="text/javascript" src="js/page-scroll.js"></script>
+      <!-- swiper carousel -->
+      <script type="text/javascript" src="js/swiper.min.js"></script>
+      <!-- counter -->
+      <script type="text/javascript" src="js/jquery.count-to.js"></script>
+      <!-- parallax -->
+      <script type="text/javascript" src="js/jquery.stellar.js"></script>
+      <!-- magnific popup -->
+      <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+      <!-- portfolio with shorting tab -->
+      <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+      <!-- images loaded -->
+      <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+      <!-- pull menu -->
+      <script type="text/javascript" src="js/classie.js"></script>
+      <script type="text/javascript" src="js/hamburger-menu.js"></script>
+      <!-- counter  -->
+      <script type="text/javascript" src="js/counter.js"></script>
+      <!-- fit video  -->
+      <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+      <!-- equalize -->
+      <script type="text/javascript" src="js/equalize.min.js"></script>
+      <!-- skill bars  -->
+      <script type="text/javascript" src="js/skill.bars.jquery.js"></script> 
+      <!-- justified gallery  -->
+      <script type="text/javascript" src="js/justified-gallery.min.js"></script>
+      <!--pie chart-->
+      <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+      <!-- instagram -->
+      <script type="text/javascript" src="js/instafeed.min.js"></script>
+      <!-- retina -->
+      <script type="text/javascript" src="js/retina.min.js"></script>
+      <!-- revolution -->
+      <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+      <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+      <!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
+      <!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>-->
+      <!-- setting -->
+      <script type="text/javascript" src="js/main.js"></script>
+   </body>
+   <!-- Mirrored from www.themezaa.com/html/pcontact-us.htmlhtml by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 23 Oct 2017 09:36:05 GMT -->
+</html>
