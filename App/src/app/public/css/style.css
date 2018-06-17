@@ -3856,7 +3856,7 @@ aside .latest-post li figure {width: 75px;}
     padding-right:0px!important;
 }
 #ploshad{
-    margin:0px;
+    margin-bottom: 0px;
 }
 .conditionLabels{
     width: 100%;
@@ -3991,4 +3991,16 @@ aside .latest-post li figure {width: 75px;}
     padding:20px 10px;
     margin: 20px auto;
     
+}
+.calklink{
+    color: white;
+    font-size: 17px!important;
+}
+.calklink:focus, .calklink:hover{
+    color: white;
+}
+.tab-content{
+    font-size: 12px;
+    padding:15px;
+    background-color: #fff;
 }

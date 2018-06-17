@@ -5,6 +5,7 @@ var lastScroll = 0;
 var isMobile = false;
 var isiPhoneiPad = false;
 var prices = [[400,350,300,250],[900,800,700,600],[1400,1250,1100,950],[1600,1450,1300,1100]];
+var square = [400, 150, 50];
 var startPercent = 0.5;
 var endPercent = 0.25;
 var startPrice = 70000;
@@ -364,22 +365,39 @@ $(document).ready(function () {
     $('.percentCalc').hide();
     $("#ploshad, [name='supervision'], [name='Commercial']").on("change paste keyup", function() {
         var tarif = 1;
-        console.log("test");
-        if($("#ploshad").val() > 399)
+        //console.log("test");
+        if($("#ploshad").val() >= square[0])
             tarif = 3;
-        if($("#ploshad").val() < 400)
+        if($("#ploshad").val() < square[0])
             tarif = 2;
-        if($("#ploshad").val() < 150)
+        if($("#ploshad").val() < square[1])
             tarif = 1;
-        if($("#ploshad").val() < 50)
+        if($("#ploshad").val() < square[2])
             tarif = 0;
         $('.priceDynamic').map(elem => {
-            var curr = $($('.priceDynamic')[elem]);
+        var curr = $($('.priceDynamic')[elem]);
+        $( $('.tilesContentPrices')[elem]).html(
+        "Oт "+prices[elem][3]+" р/квм до "+prices[elem][0]+" р/квм</br>В зависимости от площади</br>")
         let multiplication = 1;
-        let total = prices[curr.attr('tarif')][tarif]*$("#ploshad").val()
+            //console.log($("#ploshad").val(), elem, prices[elem][3],prices[elem][0], square[0])
+        if($("#ploshad").val() > 400)
+            tarif = prices[elem][3];
+        else if($("#ploshad").val() > 50)
+            tarif = prices[elem][3] + (1 - ($("#ploshad").val()-50)/(square[0]-50))*(prices[elem][0] - prices[elem][3]);
+        else
+            tarif = prices[elem][0];
+        let total =tarif*$("#ploshad").val();
+        //console.log('tarif',tarif,'toral',total)
+        if($('[name="Commercial"]').is(':checked'))
+            $('.TarifPercentCalc').hide();
+        else
+            $($('.TarifPercentCalc')[elem]).show();
+        console.log(tarif)
+        $($('.TarifPercentage')[elem]).html(tarif.toFixed(1) + " р/квм");
           if($('[name="supervision"]').is(':checked') && !$('[name="Commercial"]').is(':checked')){
             $('.firstAlarm').show();
             $($('.percentCalc')[elem]).show();
+        console.log('тотал',total)
             if(total <= 70000)
                 multiplication = 1.5;
             else
@@ -397,6 +415,7 @@ $(document).ready(function () {
           else
             $('.firstAlarm').hide();
           total = total * multiplication;
+          console.log('percent: ',((multiplication-1)*100))
           $($('.percentage')[elem]).html(((multiplication-1)*100).toFixed(2) + "%");
           total = total?total.toFixed(2) + '₽':'';
           if($('[name="Commercial"]').is(':checked')){
@@ -409,6 +428,7 @@ $(document).ready(function () {
           curr.html( total );  
         })
     });
+    $("#ploshad").trigger("keyup");
     // Bootsnav menu work with eualize height
     $("nav.navbar.bootsnav ul.nav").each(function () {
         $("li.dropdown", this).on("mouseenter", function () {
